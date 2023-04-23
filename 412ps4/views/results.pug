@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Results
+  body
+    h1 Results
+    if data.total_results > 0
+      ul
+        each item in data.results
+          li=item.title
+    else
+      p No results found.
+
+doctype html
+html
+  head
+    title Error
+  body
+    h1 Error
+    p #{error}

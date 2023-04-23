@@ -1,0 +1,12 @@
+<div>
+  <button (click)="getWeather()">get weather</button>
+  <hr>
+  <div *ngIf="!!mockData.length">
+    <ul *ngFor="let item of mockData" style="word-break: break-all">
+      <li>
+        {{item}}
+      </li>
+    </ul>
+  </div>
+  <p *ngIf="!mockData.length">no data</p>
+</div>
